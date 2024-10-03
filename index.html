@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
     <title>Recap 03-10-24</title>
   </head>
   <body>
@@ -14,9 +15,19 @@
       <article>
         <h2>Ini Title</h2>
       </article>
+      <button onclick="turnon()" style="background-color: green">
+        Saklar On
+      </button>
+      <button onclick="turnoff()" style="background-color: red">Saklar Off</button>
     </section>
-    <footer>
-      <h2>Ini Footer</h2>
-    </footer>
+
+    <script>
+      function turnon() {
+        alert('Lampunya berhasil menyala');
+      }
+      function turnoff() {
+        alert('Lampunya dimatikan');
+      }
+    </script>
   </body>
 </html>
